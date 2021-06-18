@@ -1,0 +1,57 @@
+* {
+    margin: 0%;padding: 0%;box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(44, 162, 170);
+}
+
+
+#endereco{
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    margin-bottom: 20px ;
+    align-self: center;
+}
+.endereco p:not(:last-child){
+    border-bottom: 1px solid black;
+}
+.recadastro{
+    display: flex;
+    margin: 15px 0;
+}
+
+
+form{
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container {
+    margin: 10px 0;
+}
+
+.container_button{
+    align-self: center;
+    margin: 25px 0;
+}
+.enviar{
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+}

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0ch;
+    box-sizing: border-box;
+}
+
+#principal{
+    display: flex;
+    background: linear-gradient(to right, rgb(73, 72, 72),rgb(19, 18, 18));
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pedidos{
+    background: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    box-shadow: 0 8px 32px 0 rgba(59, 69, 209, 0.37);
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    margin: 25px;
+}
+.dados_cliente{
+    width: 45%;
+    margin-right: 15px;
+}
+
+.dados_pedido{
+    width: 45%;
+}
+
+p:not(:last-child){
+    margin: 15px 0;
+    border-bottom: .6px solid rgb(173, 158, 158);
+}
+
+.encerramento{
+    margin-top: 15px;
+  
+}

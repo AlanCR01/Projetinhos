@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Login Usuário</title>
+        <meta charset="utf-8">
+        <style>
+            *{margin: 0%;padding: 0%;box-sizing: border-box;}
+            #principal{
+                display: flex; flex-direction: row; justify-content: center; align-items: center;
+                width: 100%;
+                background: linear-gradient(#1f005c,#ffb56b);
+                height: 100vh;
+            }
+            .container_login{
+                display: flex;flex-direction: column;justify-content: space-around; align-items: center;
+                background-color: #fff;
+                border-top-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border:none;
+                box-shadow: 3px 4px .8px rgb(199, 46, 46);
+                max-width: 50%;
+            }
+            .title{
+                text-transform: capitalize;
+                font-weight: bold;
+                margin: 45px 0px;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            .label_input{
+                display: flex;
+                text-align: center;
+                height: 50px;
+                width: 80%;
+                font-size: 2em;
+                border-radius: 10px;
+                background: rgba(196, 190, 190, 0.5);
+            }
+            .label_input:not(:first-child){ /*aqui apenas o primeiro filho do label input NÃO receberá o margin-top,(o label nome)*/
+                margin-top: 15px;
+            }
+            .icon_modify{
+                padding: 10px 10px;
+            }
+            .form input{
+                width: 100%;
+                height: 100%;
+                border-style: none;
+                background-color: transparent;
+                line-height: 45px;
+                font-size: .7em;
+               
+            }
+            .btn_enviar{ /*Padrao dos botões geral*/
+                align-self: center;
+                border-style: none;
+                margin: 40px 0px;
+                line-height: 30px;
+                border-radius: 14px;
+                text-transform: uppercase;
+                width: 150px;
+                cursor: pointer;
+
+            }
+        </style>
+    </head>
+    <body>
+        <section id="principal">
+            <div class="container_login">
+                <h2 class="title">Entrar</h2>
+
+                        <form action="login.php" method="POST" class="form">
+                            <label for="email" class="label_input">
+                                <img src="images/email-envelope.svg" class="icon_modify"> <input type="email" id="email" name="email" placeholder="Digite seu E-mail" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" required>
+                            </label>
+                           
+                            <label for="senha" class="label_input">
+                                <img src="images/lock.png" class="icon_modify"><input type="password" id="senha" name="senha" placeholder="Digite sua Senha" required>
+                            </label>
+                           
+                            <button class="btn_enviar">Entrar</button>
+
+                        </form>
+            </div>
+        </section>
+    </body>
+</html>
