@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box; margin: 0; padding: 0%;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: brown;
+    min-height: 100vh;
+}
+.style1{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: aqua;
+    border-radius: 10px;
+    border-style: none;
+}
+.style2{
+    width: 155px;
+    height: 70px;
+    font-size: 25px;
+    margin: 25px 0px;
+    background-color: rgb(131, 201, 39);
+    
+    border-style: none;
+}
+.style3{
+    width: 115px;
+    height: 50px;
+    font-size: 10px;
+    margin: 25px 0px;
+    background-color: #ff00f2;
+    border-radius: 15px;
+    border-color: black;
+}
+.style4{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(97, 124, 34);
+    border-radius: 8px;
+    transform: rotate(25deg);
+}
+.style5{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(206, 47, 47);
+    border-color: rgb(42, 126, 165);
+    transform: rotate(53deg);
+    margin-left: 26px;
+    cursor: text;
+}
+.style6{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(92, 20, 139);
+    border-radius: 15px;
+    border-style: none;
+    transform: scale(2,1);
+    box-shadow: 10px 7px black;
+    margin-right: 50px;
+    cursor: copy;
+    transform:rotateX();
+}
+.style6:hover{
+    transform: rotateX(245deg);
+}
+.style7{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(56, 4, 4);
+    border-radius: 15px;
+    border-color: #ccc;
+    text-shadow: 1px 1px rgb(158, 34, 127);
+    color: rgb(182, 201, 16);
+    cursor: pointer;
+}
+.style7:hover{
+    transform: scale(1,1.5);
+    transform: rotateY(154deg);
+}
+.style8{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(32, 158, 99);
+    border-radius: 15px;
+    border-style: none;
+    text-shadow: 1px 1px rgb(33, 100, 126);
+    color: #fff;
+    cursor: pointer;
+}
+.style9{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 15px;
+    border-style: none;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.911);
+    color: rgba(240, 238, 238, 0.616);
+    cursor: pointer;
+}
+.style9:hover{
+    transform: rotate(85deg);
+
+}
+.style10{
+    width: 155px;
+    height: 70px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(123, 133, 33);
+    border-radius: 15px;
+    border-style: none;
+    text-shadow: 1px 1px rgb(105, 31, 128);
+    color: rgb(34, 11, 136);
+    cursor: pointer;
+    
+}
+.style10:hover{
+    transform: rotate(85deg);
+}
+.style11{
+    width: 115px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: black;
+    border-radius: 15px;
+    border-style: none;
+    text-shadow: 1px 1px rgb(228, 223, 223);
+    color: #fff;
+    cursor: pointer;
+}
+.style11:hover{
+    transform: rotateY(125deg);
+}
+.style12{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: black;
+    border-radius: 15px;
+    border-style: none;
+    text-shadow: 1px 1px rgb(228, 223, 223);
+    color: #fff;
+    cursor: pointer;
+}
+.style12:hover{
+    transform: rotateZ(200deg);
+}
+.style13{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(209, 189, 8);
+    border-radius: 15px;
+    border-color: rgb(69, 42, 165);
+    text-shadow: 2px 2px rgb(134, 12, 12);
+    color: #fff;
+    cursor: pointer;
+}
+.style13:hover{
+    transform: rotateX(150deg);
+}
+.style14{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: black;
+    border-radius: 15px;
+    border-style: none;
+    text-shadow: 1px 1px rgb(228, 223, 223);
+    color: #fff;
+    cursor:cell
+}
+.style14:hover{
+    transform: scale(.8,1);
+    text-transform: uppercase;
+}
+.style15{
+    width: 155px;
+    height: 50px;
+    font-size: 20px;
+    margin: 25px 0px;
+    background-color: rgb(245, 243, 243);
+    border-radius: 15px;
+    border-style: none;
+    text-shadow: 1px 1px rgb(41, 38, 38);
+    color: rgb(99, 10, 10);
+    cursor: pointer;
+}
+.style15:hover{
+    transform: scale(2,2);
+}
