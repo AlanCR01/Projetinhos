@@ -1,0 +1,422 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+main{
+    background-color: coral;
+    max-width: 100%;
+    width: 100%;
+}
+
+/*menu*/
+
+
+
+header{
+    position: absolute;
+    z-index: 3;
+    background-color: #000;
+    width: 60%;
+    height: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hamburguer{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 5;
+    content: "";
+    width: 30px;
+    height: 3px;
+    top: 30px;
+    left: 10px;
+}
+.hamburguer::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: azure;
+    top: -10px;
+    z-index: 5;
+}
+.hamburguer::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: azure;
+    top: 10px;
+    z-index: 5;
+}
+header {
+  display: none; 
+  transition: .3s;
+}
+header.active{
+    display: flex;
+}
+header ul{
+    margin-left: 45px;
+    list-style: none;
+    width: 100%;
+
+}
+.ul_more{
+    width: auto;
+}
+header ul li{
+    padding: 17px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+}
+header ul li:hover{
+    background-color: grey;
+}
+#more{
+    display: flex;
+}
+#more:hover .ul_more{
+    display: block;
+}
+.ul_more{
+    background-color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    margin-top: 41px;
+    
+}
+.ul_more a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.seta_more{
+    align-self: flex-end;
+}
+
+
+header >img{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.image_main {
+    text-align: center  !important;
+    position: relative;
+    width: 100%;
+}
+
+.text_img{
+    position: absolute;
+    display: none;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 38px 16px;
+}
+.text_img h3{
+    font-size: 2rem;
+}
+.text_img p{
+    margin-top: 20px;
+}
+
+
+.band{
+    text-align: center;
+    padding: 15px;
+}
+.band >h3{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 60px;
+    font-size: 30px;
+    font-size: 5rem;
+}
+.band .message{
+    margin: 10px 0px;
+    font-size: 2rem;
+    color: grey;
+    text-transform: capitalize;
+}
+.band .text{
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.integrantes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    
+}
+.photos_integrantes{
+    text-align: center;
+    width: 100%;
+}
+.photos_integrantes >h3{
+    font-family: sans-serif;
+    font-size: 2em;
+    margin: 10px 0px;
+}
+/*fim da banda*/
+
+
+/*datas turne*/
+.tour_dates{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tour_dates >h3{
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    margin: 20px 0;
+    font-size: 40px;
+}
+.tour_dates >p{
+    color: grey;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.locals{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.local{
+    background-color: #fff;
+    
+}
+@media only screen and (max-width:600px){
+    .local:not(:first-child){
+        margin-top: 25px;
+} 
+}
+.local img{
+    width: 100%;
+}
+
+.local_information{
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-left: 15px;
+    color: black;
+}
+.local_information h3,p{
+    margin-bottom: 9px;
+}
+
+.local_information  h3 + p {
+    color: grey;
+}
+button{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    outline: 0;
+    border: none;
+}
+button:hover{
+    background-color: grey;
+    color: #000;
+}
+/*fim da turne */
+
+
+/*parte do contato*/
+.container_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.container_contact >h3{
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 25px 0px;
+}
+.container_contact >p{
+    color: grey;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+.contact{
+    display: flex;
+    width: 95%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.local_contact{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    width: 80%;
+   
+}
+
+.local_contact>span:not(:first-child){
+  margin-top: 25px;
+}
+.info_personal{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.info_personal button{
+    align-self: flex-end;
+    height: 2.4rem;
+    font-size: 1rem;
+    width: 3.4rem;
+}
+.info_personal input{
+    height: 2.4rem;
+    margin-bottom: 8px;
+    border: 1px solid grey;
+}
+
+
+/*fim do contato*/
+
+.map{
+    width: auto;
+    height: auto;
+    max-width: 100%; 
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+.icon{
+    margin-left: 5px;
+}
+footer> p{
+    margin-top: 20px;
+}
+
+
+/*responsividade*/
+
+@media only screen and (min-width:600px){
+    /*for tablets*/
+    :root{
+        font-size: 1.4em;
+    }
+    
+    header{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: #fff;
+        position: fixed;
+        z-index: 2;
+    }
+    .hamburguer{
+        display: none;
+    }
+   
+    header >ul{
+        display: flex;  
+        margin-left: 0px;
+    }
+   
+  
+    /*fim do menu*/
+
+
+    .text_img{
+        display: block;
+    }
+    .locals{
+        flex-direction: row;
+    }
+    .local{
+        width: 40%;
+        margin: 15px auto;
+    }
+
+
+    .photos_integrantes{
+        width: 50%;
+      
+    }
+    .photos_integrantes img{
+        height: auto;
+    }
+
+    /*contato*/
+    .local_contact{
+        width: 50%;
+    }
+    .local_contact>span:not(:first-child){
+        margin-top: 25px;
+    }
+    .info_personal{
+        width: 50%;
+    }
+   
+}
+@media only screen and (min-width:1200px){
+    /*for pcs*/
+    /*tour data*/
+    .locals{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .local{
+        width: 25%;       
+    }
+
+    /*band integrantes*/
+    .photos_integrantes{
+        width: 33.33%;
+      
+    }
+    .photos_integrantes img{
+        height: auto;
+    }
+
+    /*contato*/
+    .local_contact{
+        width: 50%;
+    }
+    .local_contact>span:not(:first-child){
+        margin-top: 25px;
+    }
+    .info_personal{
+        width: 50%;
+    }
+
+    .container_contact{
+        height: 80vh
+    }
+    .contact{
+        max-width: 70%;
+   
+    }
+   
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hamburguer" ></div>
+    <header >
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>Band</a></li>
+            <li><a>tour</a></li>
+            <li><a>contact</a></li>
+            <li  id="more">
+                <a>more</a>
+                <ul class="ul_more">
+                    <li><a href="#">merchandise</a></li>
+                    <li><a href="#">extras</a></li>
+                    <li><a href="#">media</a></li>
+                </ul>
+                <img src="seta-para-baixo.png" alt="seta-para-baixo" class="seta_more">
+            </li>
+        </ul>
+        <img src="loupe.png">
+    </header>
+    <main>
+        <div class="image_main">
+            <img src="https://www.w3schools.com/w3images/la.jpg" width="100%">
+            <div class="text_img">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+            </div>
+        </div>
+        <div class="band">
+            <h3>the band</h3>
+            <p class="message">we love music</p>
+            <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            </p>
+        
+        <section class="integrantes">
+            <div class="photos_integrantes"><h3>Name</h3><img src="https://www.w3schools.com/w3images/bandmember.jpg" class="img_integrante"></div>
+            <div class="photos_integrantes"><h3>Name</h3><img src="https://www.w3schools.com/w3images/bandmember.jpg" class="img_integrante"></div>
+            <div class="photos_integrantes"><h3>Name</h3><img src="https://www.w3schools.com/w3images/bandmember.jpg" class="img_integrante"></div>
+        </section>
+        </div><!--fim class band-->
+
+
+        <section class="tour_dates">
+            <h3>Tour dates</h3>
+            <p>Remember to book your tickets!</p>
+
+            <section class="locals">
+                <div class="local">
+                    <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="">
+                    <div class="local_information">
+                        <h3>New York</h3>
+                        <p>Fri 27 Nov 2021</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
+                    
+                </div>
+                <div class="local">
+                    <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="">
+                    <div class="local_information">
+                        <h3>New York</h3>
+                        <p>Fri 27 Nov 2021</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
+                    
+                </div>
+                <div class="local">
+                    <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="">
+                    <div class="local_information">
+                        <h3>New York</h3>
+                        <p>Fri 27 Nov 2021</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button>Buy Tickets</button>
+                    </div>
+                    
+                </div>
+            </section>
+        </section><!--fim class tour-date-->
+
+
+        <section class="container_contact">
+            <h3>contact</h3>
+            <p>Fan? Drop a note!</p>
+            <div class="contact">
+                <div class="local_contact">
+                    <span><img src="loca.png" alt=""> Chicago, US</span>
+                    <span><img src="phone.png" alt=""> Phone: +00121212</span>
+                    <span><img src="email.png" alt=""> Email: mail@mail.com</span>
+                </div>
+                <div class="info_personal">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">                  
+                    <input type="text" placeholder="Messsage">
+                    <button>Send</button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section >
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="map">
+        </section>
+   
+        <footer>
+            <section class="icons">
+                <i class="fa fa-facebook-square icon" aria-hidden="true"></i>
+                <i class="fa fa-instagram icon" aria-hidden="true"></i>
+                <i class="fa fa-snapchat icon" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-p icon" aria-hidden="true"></i>
+                <i class="fa fa-twitter icon" aria-hidden="true"></i>
+                <i class="fa fa-linkedin icon" aria-hidden="true"></i>
+
+            </section>
+            <p>Powered by ACR</p>
+        </footer>
+    </main>
+    <script>
+        let btn_active = document.querySelector(".hamburguer");
+        let btn_header = document.querySelector("header");
+       
+        btn_active.onclick = function(){
+            btn_active.classList.toggle("active");
+            btn_header.classList.toggle("active");
+        }
+        
+    </script>
+</body>
+
+</html>
