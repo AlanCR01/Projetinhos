@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+:root{
+    font-size: 18px;
+    
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header h3, header p{
+    text-decoration: underline;
+    padding: 15px;
+    font-weight: 100;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+header h3{
+    text-transform: uppercase;
+    margin-left: 35px;  
+}
+header h3:hover,header p:hover{
+    background-color: #ccc;
+
+}
+header p{
+    text-transform: capitalize;  
+    margin-right: 35px;
+}
+
+/*fim header*/
+
+/*formatacao secao das fotos*/
+
+.container_photos{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    height: auto;
+}
+.photos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1!important;
+    padding: 25px 0;
+}
+.about >h3{
+    font-size: 1.9rem;
+    text-transform: capitalize;
+    margin: 25px 0px 45px;
+}
+
+.my_photo >img{
+    width: 300px;
+    height: auto;
+    margin-bottom: 25px;
+}
+form{
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paragraph{
+    text-indent: 25px;
+    text-align: center;
+    margin: 4px 0px 25px;
+    font-size: 1.2rem;
+}
+.message{
+    color: rgb(216, 27, 90);
+    margin-bottom: 25px;
+}
+input{
+    height: 35px;
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+button{
+    width: 100%;
+    border: none;
+    background-color: #616161!important;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 5px 0;
+}
+
+footer{
+    margin-top: 25px;
+}
+footer >p >span{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width:600px){
+    .container_photos{
+        flex-direction: column;
+    }
+    .photos{
+        width: 100%;
+    }
+    form{
+        width: 90%;
+    }
+}
