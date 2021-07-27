@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;padding: 0; box-sizing: border-box; 
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    font-size: 18px;  
+}
+/*formatacao geral*/
+h3{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc !important;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    padding: 10px 0;
+    font-size: 1.1rem;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    color: #000;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fff;
+    z-index: 5;
+}
+header>h2{
+    text-transform: capitalize;
+    padding: 15px;
+    cursor: pointer;
+}
+
+header>h2>span{
+    text-transform: uppercase;
+}
+ul{
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 25px;
+    padding: 15px;
+}
+ul li a:hover,header>h2:hover{
+    background-color: #ccc;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 90%;
+   
+}
+
+.img_inicial img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.container_projects{
+    margin-top: 30px;
+}
+ 
+.container_images{
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    justify-content: space-between;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+   
+}
+img:not(:first-child){
+    margin-top: 20px;
+}
+
+
+/*secao about */
+.titulo_about{
+    text-transform: capitalize;
+    font-weight: bolder;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc !important;
+}
+.message_about{
+    margin-top: 25px;
+}
+
+/*secao authors*/
+.authors{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    filter: grayscale(75%);
+}
+
+.author{
+    width: 24%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+.author:hover{
+    background-color: rgb(238, 229, 229);
+}
+.author img{
+    width: 100%;
+}
+.author h3{
+    margin-top: 10px;
+}
+.author span{
+    padding: 10px 0;
+    color: rgb(126, 121, 121);
+}
+
+.author button{
+    padding: 10px;
+    border: none;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.author button:hover{
+    background-color: #adacac;
+}
+
+
+
+/*secao do contato*/
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+   
+}
+.contact_container form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.contact_container form input{
+    margin: 5px 0;
+    height: 45px;
+    font-size: 1.3rem;
+    padding-left: 15px;
+    color: #ccc;
+    border: 2px solid #ccc;
+}
+.contact_container form button{
+    align-self: flex-start;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    margin-top: 25px;
+}
+
+
+/*local*/
+.local img{
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+
+}
+footer p{
+    font-size: 1.3rem;
+}
+footer p span{
+    text-decoration: underline;
+}
+@media only screen and (max-width:600px){
+    .container_images{
+        flex-direction: column;
+    }
+    .images{
+        width: 100%;
+    }
+    .author{
+        width: 49%;
+        margin-top: 25px;
+    }
+
+}
