@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.titulo, .welcome{
+    align-self: center;
+    margin: 10px 0 0 0;
+}   
+.titulo{
+    font-size: 4.9rem;
+    text-transform:uppercase;
+}
+.welcome{
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.welcome span{
+    background-color: #000;
+    color: #fff;
+    padding: 1px 5px;
+}
+.container_content{
+    display: flex;
+    flex-direction: column;
+}
+.conteudos{
+    width: 100%;
+}
+.postagem,.postagem_lateral,.popular_posts,.container_tags{
+    max-width: 100%;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.postagem img{
+    max-width: 100%;
+    width: 100%;
+}
+.descricao_postagem span{
+    color: rgb(117, 116, 116);
+}
+.content_postagem{
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.content_postagem h3,.descricao_postagem,.texto_postagem,.botao_comments{
+    margin-top: 15px;
+}
+
+.botao_comments{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.botao_comments button{
+    padding: 15px;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.botao_comments button:hover{
+    background-color: #ccc;
+}
+.botao_comments span{
+    padding: 5px 8px;
+    font-size: .6rem;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+aside{
+    width: 100%;
+}
+
+.postagem_lateral img{
+    max-width: 100%;
+    width: 100%;
+}
+.content_lateral{
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.content_lateral h3{
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.paragraph_lateral{
+    margin-bottom: 15px;
+}
+
+.popular_posts{
+    display: flex;
+    flex-direction: column;
+}
+.popular_posts h4, .container_tags h4{
+    width: 100%;
+    background-color: rgb(235, 227, 227);
+    padding: 25px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.posts{
+    display: flex;
+    padding: 15px;
+    cursor: pointer;  
+}
+.posts:not(:last-child){
+    border: 1px solid #ccc;
+}
+.posts img{
+    max-width: 60px;
+}
+.posts:hover{
+    background-color: #ccc;
+}
+.content_post{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content_post h5{
+    font-size: 1.6rem;
+}
+.content_post p{
+    font-size: 1.1rem;
+    color: rgb(56, 54, 54);
+}
+.tags{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.tags span{
+    padding: 3px 6px;
+    background-color: #f1f1f1;
+    margin: 5px;
+    cursor: pointer;
+}
+.tags span:first-child{
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+/*footer*/
+footer{
+    background-color: rgb(82, 79, 79);
+    padding: 25px;
+}
+.previous,.next{
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    border: none;
+}
+.previous{
+    background-color: rgb(44, 43, 43);
+    color: rgb(155, 150, 150);
+}
+.next{
+    color: #fff;
+    background-color: #000;
+}
+footer p{
+    color: #fff;
+    margin: 30px 0;
+}
+footer p span{
+    text-decoration: underline;
+}
+
+
+
+@media  only screen and (min-width: 600px){
+    aside{
+        width: 30%;
+    }
+    .conteudos{
+        width: 65%;
+    }
+    .container_content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
