@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://www.w3schools.com/w3images/forestbridge.jpg);
+    min-height: 100vh;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.6rem;
+}
+
+.container_titulo{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+   
+}
+.container_titulo h2{
+    font-size: 4.6rem;
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+    animation: titulo_animation  1.0s;
+    
+}
+.container_titulo span{
+    border-top: 1px solid #fff;
+    align-self: center;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+footer p{
+    font-size: 0.8rem;
+}
+footer p span{
+    text-decoration: underline;
+}
+@keyframes titulo_animation{
+    from{
+        top: -150px;
+        color: #ccc;
+    }
+    to{
+        top: 0px;
+    }
+}
